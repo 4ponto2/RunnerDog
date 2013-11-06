@@ -17,6 +17,7 @@ private var obsL : GameObject[];
 private var obsM : GameObject[];
 private var obsR : GameObject[];
 var queue : GameObject[];
+private var oldRnd : int;
 
 //Positions
 private var nextPos : Vector3;
@@ -24,6 +25,7 @@ var startPos : Vector3;
 
 function Start () {
 	
+	oldRnd = 6;
 	obsL = new GameObject[numOfObj];
 	obsM = new GameObject[numOfObj];
 	obsR = new GameObject[numOfObj];
@@ -31,9 +33,9 @@ function Start () {
 	
 	for (i = 0; i<numOfObj; i++) {
 		gen(i);
-		nextPos.x += objDist;
-		obsL[i].transform.position.z -= 1.3;
-		obsR[i].transform.position.z += 1.3;
+//		nextPos.x += objDist;
+//		obsL[i].transform.position.z -= 1.3;
+//		obsR[i].transform.position.z += 1.3;
 	}
 	
 }
@@ -58,16 +60,16 @@ function Recycle (){
 		obsM[i-1] = obsM[i];
 		obsR[i-1] = obsR[i];
 	}
-	
-	nextPos.x += objDist;
+
 	gen(i-1);
-	obsL[i-1].transform.position.z -= 1.3;
-	obsR[i-1].transform.position.z += 1.3;
 	//obsL[numOfObj-1] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,90,0));
 }
 
 function gen(index : int) {
-	var rnd : int = Random.Range(0,6);
+	
+	do{
+		var rnd : int = Random.Range(0,7);
+	}while(rnd==oldRnd);
 	switch (rnd) {
 		case 0 :
 			obsL[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,90,0));
@@ -104,5 +106,15 @@ function gen(index : int) {
 			obsM[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,90,0));
 			obsR[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,90,0));
 			break;
+		case 7 :
+			obsL[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,90,0));
+			obsM[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,90,0));
+			obsR[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,90,0));
+			break;
 	}
+	oldRnd = rnd;	
+	nextPos.x += objDist;
+	obsL[index].transform.position.z -= 1.3;
+	obsR[index].transform.position.z += 1.3;
+	
 }

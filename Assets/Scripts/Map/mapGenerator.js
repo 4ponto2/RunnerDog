@@ -47,6 +47,6 @@ function Recycle (){
 		objs[i-1] = objs[i];
 	}
 	objs[numOfObj-1] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.identity);
-	objs[numOfObj-1].transform.position = nextPos;
+//	objs[numOfObj-1].transform.position = nextPos;
 	nextPos.x += objs[numOfObj-1].transform.localScale.x;
 }
