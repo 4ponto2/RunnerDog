@@ -1,0 +1,260 @@
+fileFormatVersion: 2
+guid: 03dd5909bc2cb134e97e422ddf12dca2
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: Concrete
+    100002: Curbs
+    100004: FacadeTexture
+    100006: FacadeTexture 1
+    100008: FacadeTexture 2
+    100010: FacadeTexture 3
+    100012: FacadeTexture 4
+    100014: FacadeTexture 5
+    100016: FacadeTexture 6
+    100018: FacadeTexture 7
+    100020: FacadeTexture 8
+    100022: FacadeTexture 9
+    100024: FlatRoofTexture
+    100026: FlatRoofTexture 1
+    100028: FlatRoofTexture 2
+    100030: FlatRoofTexture 3
+    100032: FlatRoofTexture 4
+    100034: FlatRoofTexture 5
+    100036: FlatRoofTexture 6
+    100038: FlatRoofTexture 7
+    100040: FlatRoofTexture 8
+    100042: FlatRoofTexture 9
+    100044: //RootNode
+    100046: ParkingLot
+    100048: ParkingLot 1
+    100050: ParkingLot 10
+    100052: ParkingLot 11
+    100054: ParkingLot 12
+    100056: ParkingLot 13
+    100058: ParkingLot 14
+    100060: ParkingLot 2
+    100062: ParkingLot 3
+    100064: ParkingLot 4
+    100066: ParkingLot 5
+    100068: ParkingLot 6
+    100070: ParkingLot 7
+    100072: ParkingLot 8
+    100074: ParkingLot 9
+    100076: Pavement
+    100078: Street
+    100080: YardGround
+    400000: Concrete
+    400002: Curbs
+    400004: FacadeTexture
+    400006: FacadeTexture 1
+    400008: FacadeTexture 2
+    400010: FacadeTexture 3
+    400012: FacadeTexture 4
+    400014: FacadeTexture 5
+    400016: FacadeTexture 6
+    400018: FacadeTexture 7
+    400020: FacadeTexture 8
+    400022: FacadeTexture 9
+    400024: FlatRoofTexture
+    400026: FlatRoofTexture 1
+    400028: FlatRoofTexture 2
+    400030: FlatRoofTexture 3
+    400032: FlatRoofTexture 4
+    400034: FlatRoofTexture 5
+    400036: FlatRoofTexture 6
+    400038: FlatRoofTexture 7
+    400040: FlatRoofTexture 8
+    400042: FlatRoofTexture 9
+    400044: //RootNode
+    400046: ParkingLot
+    400048: ParkingLot 1
+    400050: ParkingLot 10
+    400052: ParkingLot 11
+    400054: ParkingLot 12
+    400056: ParkingLot 13
+    400058: ParkingLot 14
+    400060: ParkingLot 2
+    400062: ParkingLot 3
+    400064: ParkingLot 4
+    400066: ParkingLot 5
+    400068: ParkingLot 6
+    400070: ParkingLot 7
+    400072: ParkingLot 8
+    400074: ParkingLot 9
+    400076: Pavement
+    400078: Street
+    400080: YardGround
+    2300000: Concrete
+    2300002: Curbs
+    2300004: FacadeTexture
+    2300006: FacadeTexture 1
+    2300008: FacadeTexture 2
+    2300010: FacadeTexture 3
+    2300012: FacadeTexture 4
+    2300014: FacadeTexture 5
+    2300016: FacadeTexture 6
+    2300018: FacadeTexture 7
+    2300020: FacadeTexture 8
+    2300022: FacadeTexture 9
+    2300024: FlatRoofTexture
+    2300026: FlatRoofTexture 1
+    2300028: FlatRoofTexture 2
+    2300030: FlatRoofTexture 3
+    2300032: FlatRoofTexture 4
+    2300034: FlatRoofTexture 5
+    2300036: FlatRoofTexture 6
+    2300038: FlatRoofTexture 7
+    2300040: FlatRoofTexture 8
+    2300042: FlatRoofTexture 9
+    2300044: ParkingLot
+    2300046: ParkingLot 1
+    2300048: ParkingLot 10
+    2300050: ParkingLot 11
+    2300052: ParkingLot 12
+    2300054: ParkingLot 13
+    2300056: ParkingLot 14
+    2300058: ParkingLot 2
+    2300060: ParkingLot 3
+    2300062: ParkingLot 4
+    2300064: ParkingLot 5
+    2300066: ParkingLot 6
+    2300068: ParkingLot 7
+    2300070: ParkingLot 8
+    2300072: ParkingLot 9
+    2300074: Pavement
+    2300076: Street
+    2300078: YardGround
+    3300000: Concrete
+    3300002: Curbs
+    3300004: FacadeTexture
+    3300006: FacadeTexture 1
+    3300008: FacadeTexture 2
+    3300010: FacadeTexture 3
+    3300012: FacadeTexture 4
+    3300014: FacadeTexture 5
+    3300016: FacadeTexture 6
+    3300018: FacadeTexture 7
+    3300020: FacadeTexture 8
+    3300022: FacadeTexture 9
+    3300024: FlatRoofTexture
+    3300026: FlatRoofTexture 1
+    3300028: FlatRoofTexture 2
+    3300030: FlatRoofTexture 3
+    3300032: FlatRoofTexture 4
+    3300034: FlatRoofTexture 5
+    3300036: FlatRoofTexture 6
+    3300038: FlatRoofTexture 7
+    3300040: FlatRoofTexture 8
+    3300042: FlatRoofTexture 9
+    3300044: ParkingLot
+    3300046: ParkingLot 1
+    3300048: ParkingLot 10
+    3300050: ParkingLot 11
+    3300052: ParkingLot 12
+    3300054: ParkingLot 13
+    3300056: ParkingLot 14
+    3300058: ParkingLot 2
+    3300060: ParkingLot 3
+    3300062: ParkingLot 4
+    3300064: ParkingLot 5
+    3300066: ParkingLot 6
+    3300068: ParkingLot 7
+    3300070: ParkingLot 8
+    3300072: ParkingLot 9
+    3300074: Pavement
+    3300076: Street
+    3300078: YardGround
+    4300000: ParkingLot
+    4300002: ParkingLot
+    4300004: YardGround
+    4300006: FacadeTexture
+    4300008: FlatRoofTexture
+    4300010: FlatRoofTexture
+    4300012: FlatRoofTexture
+    4300014: FlatRoofTexture
+    4300016: ParkingLot
+    4300018: ParkingLot
+    4300020: ParkingLot
+    4300022: FacadeTexture
+    4300024: FlatRoofTexture
+    4300026: FlatRoofTexture
+    4300028: FlatRoofTexture
+    4300030: ParkingLot
+    4300032: FacadeTexture
+    4300034: ParkingLot
+    4300036: ParkingLot
+    4300038: ParkingLot
+    4300040: FlatRoofTexture
+    4300042: FacadeTexture
+    4300044: FlatRoofTexture
+    4300046: ParkingLot
+    4300048: FacadeTexture
+    4300050: FlatRoofTexture
+    4300052: FacadeTexture
+    4300054: ParkingLot
+    4300056: ParkingLot
+    4300058: FacadeTexture
+    4300060: ParkingLot
+    4300062: FacadeTexture
+    4300064: FacadeTexture
+    4300066: ParkingLot
+    4300068: FacadeTexture
+    4300070: ParkingLot
+    4300072: Curbs
+    4300074: Pavement
+    4300076: Street
+    4300078: Concrete
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 2
+  userData: 
