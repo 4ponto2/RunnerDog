@@ -1,0 +1,19 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Count.js">
+    <Files>
+      <File FileName="Assets\Scripts\Count.js" Line="6" Column="1" />
+      <File FileName="Assets\Scripts\Map\generatePoints.js" Line="19" Column="1" />
+      <File FileName="Assets\Scripts\Map\mapGenerator.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Runner\Runner.js" Line="25" Column="32" />
+      <File FileName="Assets\Scripts\Map\generateObstacle.js" Line="19" Column="2" />
+      <File FileName="Assets\Scripts\Runner\CollisionCoin.js" Line="19" Column="1" />
+      <File FileName="Assets\Scripts\Runner\CollisionObstacle.js" Line="4" Column="8" />
+      <File FileName="Assets\Scripts\Map\obsGen.js" Line="26" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
