@@ -1,10 +1,4 @@
-﻿/*function OnControllerColliderHit(hit : ControllerColliderHit){
-	if (hit.gameObject.tag == "CoinPoint"){
-		print("PONTOS = ");
-	}
-}*/
-
-static var PONTOS = 0;
+﻿static var PONTOS = 0;
 
 function OnCollisionEnter(collision:Collision){
 
