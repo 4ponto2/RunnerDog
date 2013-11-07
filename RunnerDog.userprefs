@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Map\coinGen.js">
+    <Files>
+      <File FileName="Assets\Scripts\Map\coinGen.js" Line="72" Column="1" />
+      <File FileName="Assets\Scripts\Map\obsGen.js" Line="108" Column="10" />
+      <File FileName="Assets\Scripts\Map\mapGenerator.js" Line="36" Column="16" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
