@@ -2,17 +2,17 @@
 
      if(collision.gameObject.tag == "Player"){
      	 
-     	   if (CollisionCoin.PONTOS <= 0){
+     	   if (CollisionCoin.coins <= 0){
      	  		
-     	  		print("PONTOS: " + CollisionCoin.PONTOS);
+     	  		print("PONTOS: " + CollisionCoin.coins);
      	  		
      	  		}else{
           
-          			CollisionCoin.PONTOS -= 100;
+          			CollisionCoin.coins -= 1;
           
-          			print("PONTOS: " + CollisionCoin.PONTOS);
+          			print("PONTOS: " + CollisionCoin.coins);
           
-          			GameObject.Find("g_PointCount").guiText.text = ""+CollisionCoin.PONTOS;
+          			GameObject.Find("g_PointCount").guiText.text = ""+CollisionCoin.coins;
      	  
    		   		}
    	 }

@@ -1,13 +1,15 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CameraControl.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Runner\CollisionCoin.js">
     <Files>
-      <File FileName="Assets\Scripts\Runner\CollisionCoin.js" Line="7" Column="11" />
-      <File FileName="Assets\Scripts\Map\coinGen.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Map\coinGen.js" Line="42" Column="60" />
+      <File FileName="Assets\Scripts\Runner\CollisionCoin.js" Line="12" Column="1" />
       <File FileName="Assets\Scripts\Map\obsGen.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Map\mapGenerator.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Runner\Count.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CameraControl.js" Line="16" Column="9" />
+      <File FileName="Assets\Scripts\Runner\camLerp.js" Line="14" Column="81" />
+      <File FileName="Assets\Scripts\Runner\CollisionObstacle.js" Line="13" Column="25" />
+      <File FileName="Assets\Scripts\Runner\Runner.js" Line="37" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

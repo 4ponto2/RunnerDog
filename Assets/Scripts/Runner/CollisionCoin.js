@@ -1,16 +1,16 @@
-static var PONTOS = 0;
+#pragma strict
 
-function OnCollisionEnter(collision:Collision){
+static var coins = 0;
+
+function OnTriggerEnter(collision:Collider){
 
      if(collision.gameObject.tag == "Player"){
 
           Destroy(this.gameObject);
 
-          PONTOS += 200;
+          coins += 1;
 
-          print("PONTOS: " + PONTOS);
-
-          GameObject.Find("g_PointCount").guiText.text = ""+PONTOS;
+          GameObject.Find("g_PointCount").guiText.text = ""+coins;
 
      }
 

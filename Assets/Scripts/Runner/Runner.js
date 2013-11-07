@@ -34,7 +34,7 @@ function Update () {
 		zPos-=7;
 	}
 	// 1.57 / -1.98
-	if(Input.GetKeyDown(KeyCode.Space) && transform.position.y < 0.2 ){
+	if(Input.GetKeyUp(KeyCode.Space) && transform.position.y < 0.2 ){
 		rigidbody.AddRelativeForce(0, jumpVelocity, 0);
 	}
 	

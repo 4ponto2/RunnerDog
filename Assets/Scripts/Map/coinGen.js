@@ -39,14 +39,16 @@ function Update () {
 
 	runnerDist = runner.transform.localPosition.x;
 
-	if(objs[0].transform.position.x + (numOfObj*rate) < runnerDist){
+	if(objs[numOfObj-1].transform.position.x < runnerDist + 55){
 		Recycle();
 	}
 
 }
 
 function Recycle() {
-	Destroy(objs[0]);
+	if(objs[0] != null){
+		Destroy(objs[0]);
+	}
 	for (i = 1; i<numOfObj; i++) {
 		objs[i-1] = objs[i];
 	}
