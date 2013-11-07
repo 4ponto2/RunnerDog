@@ -1,4 +1,4 @@
-﻿static var PONTOS = 0;
+static var PONTOS = 0;
 
 function OnCollisionEnter(collision:Collision){
 
