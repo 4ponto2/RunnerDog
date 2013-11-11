@@ -1,6 +1,8 @@
-﻿function OnCollisionEnter(collision:Collision){
+﻿#pragma strict
+//
+function OnCollisionEnter(collision:Collision){
 
-     if(collision.gameObject.tag == "Player"){
+     if(collision.gameObject.tag == "Dog"){
      	 
      	   if (CollisionCoin.coins <= 0){
      	  		

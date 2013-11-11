@@ -1,5 +1,5 @@
 #pragma strict
-
+//
 static var coins = 0;
 private var timesec : float;
 //private var rot : float;
@@ -16,7 +16,7 @@ function Update() {
 
 function OnTriggerEnter(collision:Collider){
 
-     if(collision.gameObject.tag == "Player"){
+     if(collision.gameObject.tag == "Dog"){
 
           Destroy(this.gameObject);
 

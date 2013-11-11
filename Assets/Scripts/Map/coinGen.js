@@ -1,5 +1,5 @@
 ﻿#pragma strict
-
+//
 //Runner
 var runner : GameObject;
 private var runnerDist : float;
@@ -77,13 +77,13 @@ function gen(index : int) {
 function randomZ() {
 	var rnd : int = Random.Range(1,4);
 	switch(rnd){
-		case 1: nextPos.z = -1.25;
+		case 1: nextPos.z = -1.355;
 				break;
-		case 2: nextPos.z = 0.05;
+		case 2: nextPos.z = -0.05;
 				break;
-		case 3: nextPos.z = 1.35;
+		case 3: nextPos.z = 1.245;
 				break;
-		default: nextPos.z = 0.05;
+		default: nextPos.z = -0.05;
 				break;
 	}
 }

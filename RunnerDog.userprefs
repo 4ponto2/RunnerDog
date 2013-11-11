@@ -1,8 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Runner\CollisionCoin.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Runner\Runner.js">
     <Files>
-      <File FileName="Assets\Scripts\Runner\CollisionCoin.js" Line="12" Column="47" />
+      <File FileName="Assets\Scripts\Runner\Runner.js" Line="27" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

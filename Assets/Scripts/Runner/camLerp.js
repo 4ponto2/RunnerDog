@@ -1,6 +1,5 @@
 ﻿#pragma strict
-
-var startPos : Transform;
+//
 var endPos : Transform;
 var delay: float;
 

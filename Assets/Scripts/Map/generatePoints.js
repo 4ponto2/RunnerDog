@@ -1,4 +1,6 @@
-﻿var theObject:GameObject;
+﻿#pragma strict
+
+var theObject:GameObject;
 var maxPosX:float = 1000;
 var minPosX:float = 10;
 var maxPosZ:int = 2;

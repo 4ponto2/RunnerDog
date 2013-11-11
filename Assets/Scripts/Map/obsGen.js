@@ -1,5 +1,5 @@
 ﻿#pragma strict
-
+//
 //Runner
 var runner : GameObject;
 private var runnerDist : float;
