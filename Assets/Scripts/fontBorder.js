@@ -12,7 +12,8 @@ function Start () {
 
 function Update () {
 
-	kmText.guiText.text = Mathf.Round(runner.transform.localPosition.x) + "M";
+//	kmText.guiText.text = Mathf.Round(runner.transform.localPosition.x) + "M";
+	kmText.guiText.text = "X:"+Input.acceleration.x;
 	coinBorder.guiText.text = coinText.guiText.text;
 	kmBorder.guiText.text = kmText.guiText.text;
 

@@ -6,10 +6,19 @@ private var zPos : int;
 private var touchingPlatform : boolean;
 var jumpVelocity : float;
 var dog : GameObject;
+var dogGO : GameObject;
+private var drot : float;
 var largada : GameObject;
 
+// Vida
+private var life : int;
+var lifeTex : Texture;
+var emptyLifeTex : Texture;
+
 function Start () {
+	life = 3;
 	zPos = 0;
+	drot = 0;
 	touchingPlatform = true;
 }
 
@@ -21,15 +30,27 @@ function Update () {
    		Application.Quit(); 
 	}
 	
+	// Atualiza Largada
 	if(largada.transform.position.x + 130 < distanceTraveled){
 		largada.transform.position.x +=250;
 	}
 	
+	// Movimentaçao do Cachorro
 	acceleration += 0.0005;
 	distanceTraveled = transform.localPosition.x;
 	transform.Translate(acceleration * Time.deltaTime, 0, 0);
-//	transform.localPosition.z -= (Input.GetAxis("Mouse X")*0.05);
 	transform.localPosition.z -= (Input.acceleration.x*0.2);
+	
+	// Inclinaçao
+	drot = (Input.acceleration.x*-0.2);
+	dogGO.transform.localRotation.x = drot;
+	dogGO.transform.localRotation.y = drot/-2;
+	if(drot > 8){
+		drot = 8;
+	}
+	if(drot < -8){
+		drot = -8;
+	}
 	
 	
 	if(transform.localPosition.z > 1.57){

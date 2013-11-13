@@ -72,44 +72,44 @@ function gen(index : int) {
 	}while(rnd==oldRnd);
 	switch (rnd) {
 		case 0 :
-			obsL[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,90,0));
+			obsL[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,0,0));
 			obsM[index] = GameObject.Instantiate(empty, nextPos, Quaternion.Euler(0,90,0));
 			obsR[index] = GameObject.Instantiate(empty, nextPos, Quaternion.Euler(0,90,0));
 			break;
 		case 1 :
 			obsL[index] = GameObject.Instantiate(empty, nextPos, Quaternion.Euler(0,90,0));
-			obsM[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,90,0));
+			obsM[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,0,0));
 			obsR[index] = GameObject.Instantiate(empty, nextPos, Quaternion.Euler(0,90,0));
 			break;
 		case 2 :
 			obsL[index] = GameObject.Instantiate(empty, nextPos, Quaternion.Euler(0,90,0));
 			obsM[index] = GameObject.Instantiate(empty, nextPos, Quaternion.Euler(0,90,0));
-			obsR[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,90,0));
+			obsR[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,0,0));
 			break;
 		case 3 :
-			obsL[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,90,0));
-			obsM[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,90,0));
-			obsR[index] = GameObject.Instantiate(empty, nextPos, Quaternion.Euler(0,90,0));
+			obsL[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,0,0));
+			obsM[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,0,0));
+			obsR[index] = GameObject.Instantiate(empty, nextPos, Quaternion.Euler(0,0,0));
 			break;
 		case 4 :
-			obsL[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,90,0));
-			obsM[index] = GameObject.Instantiate(empty, nextPos, Quaternion.Euler(0,90,0));
-			obsR[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,90,0));
+			obsL[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,0,0));
+			obsM[index] = GameObject.Instantiate(empty, nextPos, Quaternion.Euler(0,0,0));
+			obsR[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,0,0));
 			break;
 		case 5 :
-			obsL[index] = GameObject.Instantiate(empty, nextPos, Quaternion.Euler(0,90,0));
-			obsM[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,90,0));
-			obsR[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,90,0));
+			obsL[index] = GameObject.Instantiate(empty, nextPos, Quaternion.Euler(0,0,0));
+			obsM[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,0,0));
+			obsR[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,0,0));
 			break;
 		case 6 :
-			obsL[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,90,0));
-			obsM[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,90,0));
-			obsR[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,90,0));
+			obsL[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,0,0));
+			obsM[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,0,0));
+			obsR[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,0,0));
 			break;
 		case 7 :
-			obsL[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,90,0));
-			obsM[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,90,0));
-			obsR[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,90,0));
+			obsL[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,0,0));
+			obsM[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,0,0));
+			obsR[index] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.Euler(0,0,0));
 			break;
 	}
 	oldRnd = rnd;	
