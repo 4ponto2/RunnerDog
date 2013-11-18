@@ -11,19 +11,27 @@ private var drot : float;
 var largada : GameObject;
 
 // Vida
+private var running : boolean;
 private var life : int;
-var lifeTex : Texture;
-var emptyLifeTex : Texture;
+var lifeGui : GameObject;
+var lifeGuiBd : GameObject;
+//var lifeTex : Texture;
+//var emptyLifeTex : Texture;
 
 function Start () {
+	running = true;
 	life = 3;
 	zPos = 0;
 	drot = 0;
 	touchingPlatform = true;
 }
 
-function Update () {
-
+function Update() {
+	
+	//Vida
+	lifeGui.guiText.text = ""+life;
+	lifeGuiBd.guiText.text = ""+life;
+	
 	//Nao apagar a tela:
 	Screen.sleepTimeout = SleepTimeout.NeverSleep;
 	if (Input.GetKeyDown(KeyCode.Escape)){
@@ -32,14 +40,16 @@ function Update () {
 	
 	// Atualiza Largada
 	if(largada.transform.position.x + 130 < distanceTraveled){
-		largada.transform.position.x +=250;
+		largada.transform.position.x += 250;
 	}
 	
 	// Movimentaçao do Cachorro
-	acceleration += 0.0005;
-	distanceTraveled = transform.localPosition.x;
-	transform.Translate(acceleration * Time.deltaTime, 0, 0);
-	transform.localPosition.z -= (Input.acceleration.x*0.2);
+	if(running){
+		acceleration += 0.0005;
+		distanceTraveled = transform.localPosition.x;
+		transform.Translate(acceleration * Time.deltaTime, 0, 0);
+		transform.localPosition.z -= (Input.acceleration.x*0.2);
+	}
 	
 	// Inclinaçao
 	drot = (Input.acceleration.x*-0.2);
@@ -72,19 +82,25 @@ function Update () {
 		rigidbody.AddRelativeForce(0, jumpVelocity, 0);
 	}
 	
+	if(life==0){
+		End();
+	}
+	
 }
 
-function FixedUpdate() {
-//	if(touchingPlatform){
-//		//rigidbody.AddForce(acceleration, 0f, 0f);
-//		transform.Translate(acceleration * Time.deltaTime, 0, 0);
-//	}
-	//ForceMode.Acceleration
-}
-
-function Jump() {
+function Jump(){
 
     //animation.Play("jump_pose");
     rigidbody.AddForce(Vector3.up *jumpVelocity);
  
+}
+
+function Hit(){
+	life--;
+}
+
+function End(){
+
+	running = false;
+
 }

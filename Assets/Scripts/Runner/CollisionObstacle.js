@@ -2,20 +2,8 @@
 //
 function OnCollisionEnter(collision:Collision){
 
-     if(collision.gameObject.tag == "Dog"){
-     	 
-     	   if (CollisionCoin.coins <= 0){
-     	  		
-     	  		print("PONTOS: " + CollisionCoin.coins);
-     	  		
-     	  		}else{
-          
-          			CollisionCoin.coins -= 1;
-          
-          			print("PONTOS: " + CollisionCoin.coins);
-          
-          			GameObject.Find("g_PointCount").guiText.text = ""+CollisionCoin.coins;
-     	  
-   		   		}
-   	 }
+	var runner = GameObject.Find("_Runner").GetComponent(Runner);	
+    if(collision.gameObject.tag == "Dog"){
+  		runner.Hit();
+   	}
 }
