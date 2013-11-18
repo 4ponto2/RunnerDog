@@ -87,3 +87,19 @@ function randomZ() {
 				break;
 	}
 }
+
+function Restart(){
+
+	for (i = 0; i<numOfObj; i++) {
+		Destroy(objs[i]);
+	}
+	
+	nextPos = startPos;
+	
+	objCont = 0;	
+	
+	for (i = 0; i<numOfObj; i++) {
+		gen(i);
+	}
+  
+}

@@ -18,7 +18,7 @@ var queue : GameObject[];
 private var nextPos : Vector3;
 var startPos : Vector3;
 
-function Start () {
+function Start() {
 	
 	objs = new GameObject[numOfObj];
 	nextPos = startPos;	
@@ -31,7 +31,7 @@ function Start () {
 	
 }
 
-function Update () {
+function Update() {
 
 	runnerDist = runner.transform.localPosition.x;
 
@@ -41,7 +41,7 @@ function Update () {
 
 }
 
-function Recycle (){
+function Recycle() {
 	Destroy(objs[0]);
 	for (i = 1; i<numOfObj; i++) {
 		objs[i-1] = objs[i];
@@ -49,4 +49,19 @@ function Recycle (){
 	objs[numOfObj-1] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.identity);
 //	objs[numOfObj-1].transform.position = nextPos;
 	nextPos.x += objs[numOfObj-1].transform.localScale.x;
+}
+
+function Restart(){
+
+	for (i = 0; i<numOfObj; i++) {
+		Destroy(objs[i]);
+	}
+	
+	nextPos = startPos;
+	
+	for (i = 0; i<numOfObj; i++) {
+		objs[i] = GameObject.Instantiate(queue[Random.Range(0,queue.Length)], nextPos, Quaternion.identity);
+		nextPos.x += objs[i].transform.localScale.x;
+	}	
+	
 }

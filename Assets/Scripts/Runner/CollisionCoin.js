@@ -14,6 +14,7 @@ function OnTriggerEnter(collision:Collider){
           Destroy(this.gameObject);
           var guiobj = GameObject.Find("GUI").GetComponent(guiSc);
           guiobj.coin += 1;
+          GameObject.Find("CoinSound").audio.Play();
      }
 
 }

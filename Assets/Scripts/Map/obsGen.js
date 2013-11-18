@@ -118,3 +118,19 @@ function gen(index : int) {
 	obsR[index].transform.position.z += 1.3;
 	
 }
+
+function Restart() {
+
+	for (i = 0; i<numOfObj; i++) {
+		Destroy(obsL[i]);
+		Destroy(obsR[i]);
+		Destroy(obsM[i]);
+	}
+
+	nextPos = startPos;
+
+	for (i = 0; i<numOfObj; i++) {
+		gen(i);
+	}
+
+}

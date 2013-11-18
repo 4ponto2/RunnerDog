@@ -3,7 +3,6 @@
 var acceleration : float;
 private var distanceTraveled : float;
 private var zPos : int;
-private var touchingPlatform : boolean;
 var jumpVelocity : float;
 var dog : GameObject;
 var dogGO : GameObject;
@@ -15,6 +14,7 @@ private var running : boolean;
 private var life : int;
 var lifeGui : GameObject;
 var lifeGuiBd : GameObject;
+var endGui : GameObject;
 //var lifeTex : Texture;
 //var emptyLifeTex : Texture;
 
@@ -23,7 +23,6 @@ function Start () {
 	life = 3;
 	zPos = 0;
 	drot = 0;
-	touchingPlatform = true;
 }
 
 function Update() {
@@ -86,6 +85,21 @@ function Update() {
 		End();
 	}
 	
+	var asphalt = GameObject.Find("AsphaltGen").GetComponent(mapGenerator);
+	var coin = GameObject.Find("CoinGen").GetComponent(coinGen);
+	var map = GameObject.Find("MapGen").GetComponent(mapGenerator);
+	var obstacle = GameObject.Find("ObstacleGen").GetComponent(obsGen);
+	if(running == false){
+		endGui.SetActive(true);
+		if(Input.touchCount == 1 || Input.GetMouseButton(0)){
+			Restart();
+			asphalt.Restart();
+			coin.Restart();
+			map.Restart();
+			obstacle.Restart();
+		}
+	}
+	
 }
 
 function Jump(){
@@ -100,7 +114,14 @@ function Hit(){
 }
 
 function End(){
-
 	running = false;
+}
 
+function Restart(){
+	running = true;
+	life = 3;
+	zPos = 0;
+	drot = 0;
+	transform.position.x = 0;
+	endGui.SetActive(false);
 }
