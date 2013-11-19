@@ -14,15 +14,21 @@ private var running : boolean;
 private var life : int;
 var lifeGui : GameObject;
 var lifeGuiBd : GameObject;
-var endGui : GameObject;
 //var lifeTex : Texture;
 //var emptyLifeTex : Texture;
 
+// Start/End
+var endGui : GameObject;
+var playGui : GameObject;
+
 function Start () {
-	running = true;
+
+	running = false;
 	life = 3;
 	zPos = 0;
 	drot = 0;
+	fitGui();
+
 }
 
 function Update() {
@@ -89,9 +95,13 @@ function Update() {
 	var coin = GameObject.Find("CoinGen").GetComponent(coinGen);
 	var map = GameObject.Find("MapGen").GetComponent(mapGenerator);
 	var obstacle = GameObject.Find("ObstacleGen").GetComponent(obsGen);
-	if(running == false){
-		endGui.SetActive(true);
-		if(Input.touchCount == 1 || Input.GetMouseButton(0)){
+	
+	if(Input.touchCount == 1){
+		if(playGui.activeSelf == true){
+			playGui.SetActive(false);
+			running = true;
+		}
+		if(endGui.activeSelf == true){
 			Restart();
 			asphalt.Restart();
 			coin.Restart();
@@ -100,13 +110,14 @@ function Update() {
 		}
 	}
 	
+	
 }
 
 function Jump(){
 
     //animation.Play("jump_pose");
     rigidbody.AddForce(Vector3.up *jumpVelocity);
- 
+
 }
 
 function Hit(){
@@ -115,6 +126,7 @@ function Hit(){
 
 function End(){
 	running = false;
+	endGui.SetActive(true);
 }
 
 function Restart(){
@@ -124,4 +136,14 @@ function Restart(){
 	drot = 0;
 	transform.position.x = 0;
 	endGui.SetActive(false);
+	acceleration = 5;
+}
+
+function fitGui(){
+
+	playGui.guiTexture.pixelInset.width = Screen.width;
+	playGui.guiTexture.pixelInset.height = Screen.height;
+	playGui.guiTexture.pixelInset.x = (Screen.width/-2);
+	playGui.guiTexture.pixelInset.y = (Screen.height/-2);
+
 }
